@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!--style css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body class="bg-color">
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+               <div class="card border-black">
+                <div class="card-header bg-dark"><h4 class="text-white text-center">Simple Calculator</h4></div>
+                <div class="card-body p-4">
+                    <div class="row gx-3 gy-2 align-items-center border-color">
+                      <!-- <div class="row mt-3">
+                        <div class="col alert alert-light" id="result"></div>
+                      </div> -->
+                        <div class="col-md-12 mt-4 mb-4">
+                          <button type="button" id="result" class="form-control fw-normal fs-4 text-end" readonly>0
+                        </div>
+                        <div class="col-sm-4">
+                          <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+                          <div class="input-group">
+                            <div class="input-group-text">First Digit</div>
+                            <input type="text" class="form-control" id="number1">
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-text">Second Digit</div>
+                              <input type="text" class="form-control" id="number2">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                         <select class="form-select" id="operation">
+                            <option value="add">Addition (+)</option>
+                            <option value="subtract">Subtraction (-)</option>
+                            <option value="multiply">Multiplication (*)</option>
+                            <option value="divide">Division (/)</option>
+                          </select>
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-5 mb-5">
+                          <button type="submit" id="calculateButton" class="btn btn-success fs-5">Calculate</button>
+                        </div>
+                      </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>    
+</body>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+</html>
